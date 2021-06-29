@@ -1,0 +1,90 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #000;
+}
+
+.pimg1, .pimg2, .pimg3{
+    position: relative;
+    /* opacity: 0.70; */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*
+    fixed = parallax
+    scroll = normal
+    */
+    background-attachment: fixed; /* for parallax scroll effect*/
+}
+
+.pimg1{
+    background-image: url('./pic/safar-safarov-koOdUvfGr4c-unsplash.jpg');
+    min-height: 100%;
+}
+
+.pimg2{
+    background-image: url('./pic/fotis-fotopoulos-6sAl6aQ4OWI-unsplash.jpg');
+    min-height: 70vh;
+}
+
+.pimg3{
+    background-image: url('./pic/tracy-adams-_mWreAf3b-A-unsplash.jpg');
+    min-height: 70vh;
+}
+
+.section{
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.section-light{
+    background-color: #f4f4f4;
+    color: #000;
+}
+
+.section-dark{
+    background-color: #282e34;
+    color: #ddd;
+}
+
+.ptext{
+    position: absolute;
+    top: 50%;
+    width: 100%;  /*to center the text ??*/
+    text-align: center;
+    color: white;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.ptext .border{
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+}
+
+.ptext .border.trans{
+    background-color: transparent;
+
+}
+
+h2{
+    font-size: 2.5em;
+}
+
+p{
+    font-size: 1.5em;
+}
+
+@media(max-width:568px){
+    .pimg1, .pimg2, .pimg3{
+      background-attachment:scroll;
+    }
+  }
+
+  /* it didnt work */
